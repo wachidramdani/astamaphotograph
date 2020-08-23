@@ -1,21 +1,67 @@
-.namacard {background-image: linear-gradient(-90deg, #ffffff, #fff);}
-.namacard h5 {margin-bottom: 0px; font-weight: bold; color: black;}
-.namacard p{color:#7c7c7d;}
-.namacard ol{bottom: -40px}
-.namacard h1{font-weight: bold}
-.namacard img {
-	width: 300px;
-	height: 300px;
+@font-face {
+    font-family: BenchNine;
+    src: url('../font/BenchNine-Regular.ttf');
+}
+
+body {
+    font-family: BenchNine;
+}
+
+.top-header {
+	position: fixed;
+	background: #fff !important;
+	width: 100%;
+	z-index: 1;
+	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
 }
 
 .banner {
-	height: max-content;
-	width: max-content;
+	top: 100px;
+}
+
+.navbar-brand img {
+	height: 75px;
+}
+
+.nav-link {
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.tentangkami {
+	margin-top: 100px;
+}
+
+.tentangkami h1 {
+	text-align: center;
+}
+
+.tentangkami p {
+	text-align: center;
+}
+
+.tentangkami h1 {
+	font-weight: 600;
+	font-size: 60px;
+}
+
+.tentangkami p {
+	font-size: 24px;
+	color: #737373;
+}
+
+.namacard .card-body img {
+	width: 320px;
+	height: 300px;
+	border-radius: 7px;
+	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
 }
 
 .namacard .modal-body img {
-	width: 330px; 
-	margin: 10px;
+	width: 350px;
+	height: 300px;
+	border-radius: 7px;
+	margin: 10px 5px;
 }
 
 .namacard .modal-title {
@@ -24,49 +70,200 @@
 }
 
 .namacard .modal-header .close {
-    margin: 0px; 
+	margin: 0px;
+	font-size: 50px;
 }
 
+.namacard h5 {
+	text-align: center;
+	color: black;
+	font-size: 25px;
+	text-transform: uppercase;
+}
+
+.namacard a:hover {
+	text-decoration: none;
+}
+
+.namacard h5:hover {
+	color: #737373;
+}
+
+/* 
 .namacard .carousel-control-prev {
     left: -120px;
 }
 
-/* .namacard .carousel-control-next {
+.namacard .carousel-control-next {
     right: -120px;
 } */
 
 .layanan {
-	width: 260px;
-	height: 160px;
+	margin-top: 50px;
 }
 
-.contact-info ul{
-	margin: 0;
-	padding: 0;
+.layanan h1 {
+	text-align: center;
 }
-.contact-info ul li{
-	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
-	color:#0a0909;
+
+.layanan h1 {
+	font-weight: 600;
+	font-size: 60px;
 }
-.contact-info i.fa{
-	font-size: 16px;
-  	padding-right: 12px;
-  	width: 25px;
-  	height: 38px;
+
+.layanan-content img {
+	width: 300px;
+	height: 250px;
+	border-radius: 7px;
+	margin: 10px 5px;
+	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
 }
-.contact-info ul li span{
-	font-weight: bold;
+
+.layanan-content h5 {
+	text-align: center;
+	color: black;
+	font-size: 25px;
+	text-transform: uppercase;
 }
-.info-detail{
-	border-top: 1px solid #121212;
-	padding-top: 15px;
+
+.layanan-content a:hover {
+	text-decoration: none;
 }
+
+.layanan-content h5:hover {
+	color: #737373;
+}
+
+.kontakkami {
+	margin-top: 50px;
+}
+
+.kontakkami h1 {
+	text-align: center;
+}
+
+.kontakkami h1 {
+	font-weight: 600;
+	font-size: 60px;
+}
+
+.kontakkami-addres h1 {
+	border-bottom: 3px solid black;
+	margin-bottom: 20px;
+}
+
+.kontakkami-addres p {
+	font-size: 25px;
+}
+
+.kontakkami-addres .fab, .far {
+    font-weight: 900;
+}
+
+.kontakkami-addres i {
+	margin-right: 20px;
+}
+
+.kontakkami-addres .icon {
+	margin-right: 25px;
+}
+
+.kontakkami-addres span {
+	font-weight: 600;
+}
+
+.kontakkami-addres a {
+	color: black;
+}
+
+.kontakkami-addres a:hover {
+	color: #737373;
+	text-decoration: none;
+}
+
+.kontakkami-form h1 {
+	border-bottom: 3px solid black;
+	margin-bottom: 20px;
+}
+
+.kontakkami-form label {
+	font-size: 25px;
+}
+
+.form-control {
+	border: 2px solid black;
+}
+
+
+
+/* DESKTOP VERSION */
+@media (min-width: 992px) { 
+	.nav-link {
+		text-transform: uppercase;
+		margin-right: 30px;
+	}
+
+	.banner .carousel-inner{
+		width: auto;
+		height: 600px;
+		margin:auto;
+	}
+
+	.tentangkami h1 {
+		text-transform: uppercase;
+	}
+
+	.namacard .card-body img {
+		width: 300px;
+	}
+
+	.namacard .modal-body img {
+		width: 320px;
+		margin: 20px !important;
+	}
+
+	.layanan h1 {
+		text-transform: uppercase;
+	}
+
+	.layanan-content img {
+		width: 250px;
+		height: 200px;
+	}
+
+	.kontakkami h1 {
+		text-transform: uppercase;
+	}
+
+	.kontakkami-addres h1 {
+		text-transform: uppercase;
+	}
+
+	.kontakkami-form h1 {
+		text-transform: uppercase;
+	}
+
+	.tombolwa {
+		padding:4px 25px !important;
+	}
+
+	.floatwa p {
+		visibility: visible !important;
+	}
+
+}
+
+@media (min-width: 414px) { 
+	.floatwa p {
+		visibility: hidden;
+	}
+}
+
+
 .floatwa {
 	position:fixed;
 	bottom:0px;
 	right: 0px;
-	background-color:#ffffff;
 	width:100%;
 	z-index:1000;
 	padding:2px;
@@ -75,19 +272,26 @@
 	float:none;
 }
 .tombolwa {
-border: 1px #56aa71 solid;
-background-color:#121312;
-width:10%;
-padding:4px;
-text-align:center;
-margin:0;
-border-radius: 5px;
-margin:auto;
-text-align:center;
-float:right;
-height: 40px;
+	border: 1px #56aa71 solid;
+	background-color:#121312;
+	width:10%;
+	padding:4px;
+	text-align:center;
+	border-radius: 5px;
+	margin:50px;
+	text-align:center;
+	float:right;
+	height: 40px;
 }
-.floatwa a{
-color:white;
-font-size: 20px;
+
+.floatwa a {
+	color:white;
+	font-size: 20px;
 }
+
+.floatwa p {
+	float:right;
+}
+
+
+

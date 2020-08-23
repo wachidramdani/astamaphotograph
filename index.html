@@ -9,49 +9,81 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css"/>
     <link rel="icon" type="image/png" href="images/favicon Astama.png">
     <title>Astama Photograph</title>
   </head>
   <body>
 
-    
-
-<!-- FEEDBACK -->
-    <div class="container-fluid text-center py-5 namacard">
-        <div class="container-fluid">
-          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="images/riris1.jpeg" class="d-block w-100" style="height: 800px;" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="images/meli1.jpeg" class="d-block w-100" style="height: 800px;" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="images/nisa1.jpeg" class="d-block w-100"  style="height: 800px;" alt="...">
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
+    <!-- NAVBAR -->
+    <header class="top-header">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="images/logo3.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-link active" href="index.html">Beranda <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#tentangkami">Tenang Kami</a>
+            <a class="nav-link" href="#layanan">Layanan</a>
+            <a class="nav-link" href="#kontakkami">Kontak Kami</a>
           </div>
         </div>
-        <br></br>
-        <div class="container">
-            <div class="row mb-5">
-              <div class="col-md-12">
-                  <h1 class="">TENTANG KAMI</h1>
-                  <p class="mb-5">Photography is the story i fail to put into words</p>
-                  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      </div>
+    </nav>
+    </header>
+    <!-- NAVBAR END -->
+
+    <!-- BANNER -->
+    <div id="carouselExampleIndicators" class="carousel slide banner" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/likta3.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/wachid1.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/dinda2.jpeg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <!-- BANNER END -->
+
+    <!-- CONTAINER -->
+    <div class="container mb-5 py-5">
+
+    <!-- TETANG KAMI -->
+    <section class="tentangkami" id="tentangkami">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h1>Tentang Kami</h1>
+            <p>Photography is the story i fail to put into words</p>
+          </div>
+        </div>
+    </section>
+
+    <div class="row namacard justify-content-center">
+              <div class="col-lg-12">
+                  <div id="carouselExampleIndicatorsTentangKami" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
-                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicatorsTentangKami" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicatorsTentangKami" data-slide-to="1"></li>
                     </ol>
                     <div class="carousel-inner">
                       <div class="carousel-item active">
@@ -60,7 +92,7 @@
                               <!-- SLIDE 1 LEFT -->
                               <a href="" data-toggle="modal" data-target="#myModalLeft">
                                 <div class="bg-white card-body m-3">
-                                    <img src="images/likta1.jpeg" alt=Slide 1"  class="my-3">
+                                    <img src="images/likta1.jpeg" alt=Slide 1"  class="">
                                     <h5 class="card-title mt-4">Banu & Likta</h5>
                                 </div>
                               </a>
@@ -75,12 +107,12 @@
                                       </a>
                                     </div>
                                     <div class="modal-body">
-                                      <img src="images/images-1.jpg" alt="">
-                                      <img src="images/images-1.jpg" alt="">
-                                      <img src="images/images-1.jpg" alt="">
-                                      <img src="images/images-1.jpg" alt="">
-                                      <img src="images/images-1.jpg" alt="">
-                                      <img src="images/images-1.jpg" alt="">
+                                      <img src="images/likta1.jpeg" alt="">
+                                      <img src="images/likta2.jpeg" alt="">
+                                      <img src="images/likta3.jpeg" alt="">
+                                      <img src="images/likta1.jpeg" alt="">
+                                      <img src="images/likta2.jpeg" alt="">
+                                      <img src="images/likta3.jpeg" alt="">
                                     </div>
                                 </div>
                                 </div>
@@ -89,7 +121,7 @@
                               <!-- SLIDE 1 CENTRE -->
                               <a href="" data-toggle="modal" data-target="#myModalCentre">
                                 <div class="bg-white card-body m-3">
-                                    <img src="images/dinda3.jpeg" alt=Slide 1"  class="my-3">
+                                    <img src="images/dinda1.jpeg" alt=Slide 1"  class="">
                                     <h5 class="card-title mt-4">Ferry & Dinda</h5>
                                 </div>
                               </a>
@@ -104,12 +136,12 @@
                                       </a>
                                     </div>
                                     <div class="modal-body">
-                                      <img src="images/images-2.jpg" alt="">
-                                      <img src="images/images-2.jpg" alt="">
-                                      <img src="images/images-2.jpg" alt="">
-                                      <img src="images/images-2.jpg" alt="">
-                                      <img src="images/images-2.jpg" alt="">
-                                      <img src="images/images-2.jpg" alt="">
+                                      <img src="images/dinda1.jpeg" alt="">
+                                      <img src="images/dinda2.jpeg" alt="">
+                                      <img src="images/dinda3.jpeg" alt="">
+                                      <img src="images/dinda4.jpeg" alt="">
+                                      <img src="images/dinda5.jpeg" alt="">
+                                      <img src="images/dinda6.jpeg" alt="">
                                     </div>
                                 </div>
                                 </div>
@@ -118,7 +150,7 @@
                               <!-- SLIDE 1 RIGHT -->
                               <a href="" data-toggle="modal" data-target="#myModalRight">
                                 <div class="bg-white card-body m-3">
-                                    <img src="images/nisa1.jpeg" alt=Slide 1"  class="my-3">
+                                    <img src="images/nisa1.jpeg" alt=Slide 1"  class="">
                                     <h5 class="card-title mt-4">Heru & Nisa</h5>
                                 </div>
                               </a>
@@ -133,12 +165,12 @@
                                       </a>
                                     </div>
                                     <div class="modal-body">
-                                      <img src="images/images-3.jpg" alt="">
-                                      <img src="images/images-3.jpg" alt="">
-                                      <img src="images/images-3.jpg" alt="">
-                                      <img src="images/images-3.jpg" alt="">
-                                      <img src="images/images-3.jpg" alt="">
-                                      <img src="images/images-3.jpg" alt="">
+                                      <img src="images/nisa6.jpeg" alt="">
+                                      <img src="images/nisa4.jpeg" alt="">
+                                      <img src="images/nisa5.jpeg" alt="">
+                                      <img src="images/nisa1.jpeg" alt="">
+                                      <img src="images/nisa1.jpeg" alt="">
+                                      <img src="images/nisa1.jpeg" alt="">
                                     </div>
                                 </div>
                                 </div>
@@ -151,7 +183,7 @@
                               <!-- SLIDE 2 LEFT -->
                               <a href="" data-toggle="modal" data-target="#myModalLeft2">
                                 <div class="bg-white card-body m-3">
-                                    <img src="images/meli1.jpeg" alt="Slide 1"  class="my-3">
+                                    <img src="images/meli3.jpeg" alt=Slide 1"  class="">
                                     <h5 class="card-title mt-4">Irfan & Melly</h5>
                                 </div>
                               </a>
@@ -166,12 +198,12 @@
                                       </a>
                                     </div>
                                     <div class="modal-body">
-                                      <img src="images/images-1.jpg" alt="">
-                                      <img src="images/images-1.jpg" alt="">
-                                      <img src="images/images-1.jpg" alt="">
-                                      <img src="images/images-1.jpg" alt="">
-                                      <img src="images/images-1.jpg" alt="">
-                                      <img src="images/images-1.jpg" alt="">
+                                      <img src="images/meli1.jpeg" alt="">
+                                      <img src="images/meli2.jpeg" alt="">
+                                      <img src="images/meli3.jpeg" alt="">
+                                      <img src="images/meli4.jpeg" alt="">
+                                      <img src="images/meli5.jpeg" alt="">
+                                      <img src="images/meli6.jpeg" alt="">
                                     </div>
                                 </div>
                                 </div>
@@ -180,7 +212,7 @@
                               <!-- SLIDE 2 CENTRE -->
                               <a href="" data-toggle="modal" data-target="#myModalCentre2">
                                 <div class="bg-white card-body m-3">
-                                    <img src="images/riris1.jpeg" alt=Slide 1"  class="my-3">
+                                    <img src="images/ss1exmp.jpeg" alt=Slide 1"  class="">
                                     <h5 class="card-title mt-4">Fitra & Riris</h5>
                                 </div>
                               </a>
@@ -195,12 +227,12 @@
                                       </a>
                                     </div>
                                     <div class="modal-body">
-                                      <img src="images/images-2.jpg" alt="">
-                                      <img src="images/images-2.jpg" alt="">
-                                      <img src="images/images-2.jpg" alt="">
-                                      <img src="images/images-2.jpg" alt="">
-                                      <img src="images/images-2.jpg" alt="">
-                                      <img src="images/images-2.jpg" alt="">
+                                      <img src="images/ss2exmp.jpeg" alt="">
+                                      <img src="images/ss2exmp.jpeg" alt="">
+                                      <img src="images/ss2exmp.jpeg" alt="">
+                                      <img src="images/ss3exmp.jpeg" alt="">
+                                      <img src="images/ss1exmp.jpeg" alt="">
+                                      <img src="images/ss4exmp.jpeg" alt="">
                                     </div>
                                 </div>
                                 </div>
@@ -209,7 +241,7 @@
                               <!-- SLIDE 2 RIGHT -->
                               <a href="" data-toggle="modal" data-target="#myModalRight2">
                                 <div class="bg-white card-body m-3">
-                                    <img src="images/wachid1.jpeg" alt=Slide 1"  class="my-3">
+                                    <img src="images/wachid1.jpeg" alt=Slide 1"  class="">
                                     <h5 class="card-title mt-4">Wachid & Nita</h5>
                                 </div>
                               </a>
@@ -224,12 +256,12 @@
                                       </a>
                                     </div>
                                     <div class="modal-body">
-                                      <img src="images/images-3.jpg" alt="">
-                                      <img src="images/images-3.jpg" alt="">
-                                      <img src="images/images-3.jpg" alt="">
-                                      <img src="images/images-3.jpg" alt="">
-                                      <img src="images/images-3.jpg" alt="">
-                                      <img src="images/images-3.jpg" alt="">
+                                      <img src="images/wachid1.jpeg" alt="">
+                                      <img src="images/wachid2.jpeg" alt="">
+                                      <img src="images/wachid3.jpeg" alt="">
+                                      <img src="images/wachid1.jpeg" alt="">
+                                      <img src="images/wachid2.jpeg" alt="">
+                                      <img src="images/wachid3.jpeg" alt="">
                                     </div>
                                 </div>
                                 </div>
@@ -237,112 +269,111 @@
                           </div>
                       </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <a class="carousel-control-prev" href="#carouselExampleIndicatorsTentangKami" role="button" data-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                       <span class="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <a class="carousel-control-next" href="#carouselExampleIndicatorsTentangKami" role="button" data-slide="next">
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="sr-only">Next</span>
                     </a>
                   </div>
               </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row mb-5">
-            <div class="col-md-12">
-              <h1 class="">Layanan</h1>
-              <br></br>
-              <div class="row">
-                <div class="col-md-3 col-sm-6">
-                  <div class="single-service">
-                    <div class="single-service-img">
-                      <div class="service-img">
-                        <img class="img-responsive" src="images/engagment.jpg" alt="" style="width: 260px; height: 160px;">
-                      </div>
-                    </div>
-                    <h3 class='card-title mt-4'>Engagement</h3>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="single-service">
-                    <div class="single-service-img">
-                      <div class="service-img">
-                        <img class="img-responsive" src="images/preweding.jpeg" alt="" style="width: 260px; height: 160px;">
-                      </div>
-                    </div>
-                    <h3 class='card-title mt-4'>Pre Wedding</h3>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="single-service">
-                    <div class="single-service-img">
-                      <div class="service-img">
-                        <img class="img-responsive" src="images/siraman.jpeg" alt="" style="width: 260px; height: 160px;">
-                      </div>
-                    </div>
-                    <h3 class='card-title mt-4'>Siraman</h3>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="single-service">
-                    <div class="single-service-img">
-                      <div class="service-img">
-                        <img class="img-responsive" src="images/wedding.jpeg" alt="" style="width: 260px; height: 160px;">
-                      </div>
-                    </div>
-                    <h3 class='card-title mt-4'>Wedding/Akad</h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row mb-5">
-            <div class="col-md-12">
-              <h1 class="">Kontak Kami</h1>
-              <br></br>
-              <div class="row">
-                <div class="col-md-5 contact-info text-left" style="margin-left: auto;">
-                  <h3 style="color:black">Informasi Kontak</h3>
-                  <div class="info-detail" >
-                    <ul><li><i class="fa fa-map-marker" style="color:black"></i><span>Address:</span> Depok, Indonesia</li></ul>
-                    <ul><li><i class="fa fa-phone"></i><span>Telepon:</span> 0838 11 977 083</li></ul>
-                    <ul><li><i class="fa fa-instagram"></i><span>Instagram:</span> @as.tama_photograph</li></ul>
-                    <ul><li><i class="fa fa-envelope"></i><span>Email:</span> astama.photograph@gmail.com</li></ul>
-                  </div>
-                </div>
-                <div class="col-md-5 contact-info text-left" style="margin-left: auto;">
-                  <h3>Anda Ingin Meninggalkan Pesan?</h3>
-                    <div class="info-detail">
-                      <form>
-                        <div class="form-group">
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukkan Nama Anda" style="border: solid rgb(43, 43, 31) 2px;">
-                          </div>
-                        <div class="form-group">
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukkan email" style="border: solid rgb(43, 43, 31) 2px;">
-                        </div>
-                        <div class="form-group">
-                          <textarea class="form-control" name="alamat" rows="10" cols="30" placeholder="Masukkan Pesan Anda" style="border: solid rgb(43, 43, 31) 2px;"></textarea>
-                        </div>
-                        <a href="#" style="background-color: black;" class="btn btn-primary">Kirim Pesan</a>
-                      </form>	
-                    </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+    </div> 
+    <!-- TETANG KAMI END -->
 
-          <div class="floatwa">
-            <a href="https://api.whatsapp.com/send?phone=6283811977083&amp;text=Halo Astama Photograph .." target="_blank">
-              <div class="tombolwa"> 
-                Contact us
-              </div>
-            </a>
+    <!-- LAYANAN -->
+    <section class="layanan"  id="layanan">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h1>Layanan</h1>
           </div>
+        </div>
+    </section>
+
+    <div class="row layanan-content">
+        <div class="col-md-3 col-sm-6 d-flex justify-content-center">
+          <a href="">
+            <div class="card-body m-3">
+                <img src="images/engagment.jpg" class="">
+                <h5 class="mt-4">Engagment</h5>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6 d-flex justify-content-center">
+          <a href="">
+            <div class="card-body m-3">
+                <img src="images/preweding.jpeg" class="">
+                <h5 class="mt-4">Prewedding</h5>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6 d-flex justify-content-center">          
+          <a href="">
+            <div class="card-body m-3">
+                <img src="images/siraman.jpeg" class="">
+                <h5 class="mt-4">Siraman</h5>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6 d-flex justify-content-center">
+          <a href="">
+            <div class="card-body m-3">
+                <img src="images/wedding.jpeg" class="">
+                <h5 class="mt-4">Wedding / Akad</h5>
+            </div>
+          </a>
+        </div>        
+    </div>
+    <!-- LAYANAN END -->
+
+    <!-- KONTAK KAMI -->
+    <section class="kontakkami" id="kontakkami">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h1>Kontak Kami</h1>
+          </div>
+        </div>
+    </section>
+
+    <div class="row">
+        <div class="col-md-6 kontakkami-addres mt-5">
+          <h1>Informasi Kontak</h1>
+          <a href=""><p><i class="fas fa-map-marker-alt icon"></i><span>Adress :</span> Depok, Indonesia</p></a>
+          <a href=""><p><i class="fas fa-phone-alt"></i><span>Telephone :</span> 0838 1197 7083</p></a>
+          <a href=""><p><i class="fab fa-instagram icon"></i><span>Instragram :</span> @as.tama_photograph</p></a>
+          <a href=""><p><i class="fas fa-envelope"></i><span>Email :</span> astama.photograph</p></a>
+        </div>
+        <div class="col-md-6 kontakkami-form mt-5">
+          <h1>Anda Ingin Meninggalkan Pesan?</h1>
+          <form>
+            <div class="form-group">
+              <label for="exampleInputText1">Nama</label>
+              <input type="text" class="form-control" id="exampleInputText1" aria-describedby="textHelp" placeholder="Masukkan Nama Anda">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukkan Email">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Pesan Anda</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Masukkan Pesan Anda"></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark">Kirim Pesan</button>
+          </form>
+        </div>
+    </div>
+    <!-- KONTAK KAMI END -->
+    
+    </div>
+    <!-- CONTAINER END -->
+    
+    <div class="floatwa">
+      <a href="https://api.whatsapp.com/send?phone=6283811977083&amp;text=Halo Astama Photograph .." target="_blank">
+        <div class="tombolwa"> 
+          <img src="https://web.whatsapp.com/img/favicon/1x/favicon.png"><p>WhatsApp</p>
+          </div>
+        </a>
     </div>
 
     <!-- Optional JavaScript -->
@@ -350,5 +381,6 @@
     <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
   </body>
 </html>
